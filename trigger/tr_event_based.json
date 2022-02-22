@@ -1,0 +1,24 @@
+{
+	"name": "tr_event_based",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_blob_target",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/blobstorage/blobs/channels06-12-2020-10-20-50.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/4d33434e-ce63-4106-a993-461bbccbaa28/resourceGroups/databricks/providers/Microsoft.Storage/storageAccounts/pysparkblob01",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
