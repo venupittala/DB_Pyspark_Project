@@ -1,0 +1,26 @@
+{
+	"name": "tr_blob_gen2",
+	"properties": {
+		"description": "tr_blob_gen2",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_blob_target",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2022-02-22T06:10:00",
+				"endTime": "2022-02-22T06:32:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

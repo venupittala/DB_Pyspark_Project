@@ -1,0 +1,27 @@
+{
+	"name": "ds_gen2_target",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_gen2_source",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ds_gen2_To_blob/ds_blob_To_gen2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Environments/Dev",
+				"fileSystem": "datalake"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

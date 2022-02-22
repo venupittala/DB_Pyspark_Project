@@ -1,0 +1,27 @@
+{
+	"name": "ds_blob_target",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_target",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ds_gen2_To_blob"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "blobstorage"
+			},
+			"columnDelimiter": ",",
+			"compressionCodec": "gzip",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

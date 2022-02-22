@@ -1,0 +1,108 @@
+{
+	"name": "ds_blob_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_target",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ds_gen2_To_blob/ds_blob_To_gen2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "zip_code.csv",
+				"container": "blobstorage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "RecordNumber",
+				"type": "String"
+			},
+			{
+				"name": "Zipcode",
+				"type": "String"
+			},
+			{
+				"name": "ZipCodeType",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
+			},
+			{
+				"name": "LocationType",
+				"type": "String"
+			},
+			{
+				"name": "Lat",
+				"type": "String"
+			},
+			{
+				"name": "Long",
+				"type": "String"
+			},
+			{
+				"name": "Xaxis",
+				"type": "String"
+			},
+			{
+				"name": "Yaxis",
+				"type": "String"
+			},
+			{
+				"name": "Zaxis",
+				"type": "String"
+			},
+			{
+				"name": "WorldRegion",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "LocationText",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "Decommisioned",
+				"type": "String"
+			},
+			{
+				"name": "TaxReturnsFiled",
+				"type": "String"
+			},
+			{
+				"name": "EstimatedPopulation",
+				"type": "String"
+			},
+			{
+				"name": "TotalWages",
+				"type": "String"
+			},
+			{
+				"name": "Notes",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

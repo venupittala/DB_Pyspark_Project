@@ -1,0 +1,9 @@
+{
+	"name": "databrickspyspark",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e7ca01a9-52c1-44ae-aa11-9600b1d889c8",
+		"tenantId": "db05faca-c82a-4b9d-b9c5-0f64b6755421"
+	}
+}
