@@ -1,0 +1,21 @@
+{
+	"name": "ds_blob_source1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_target",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BlobtoBlobStorage"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "zip_code.csv",
+				"container": "blobstorage"
+			}
+		}
+	}
+}
