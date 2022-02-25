@@ -1,0 +1,22 @@
+{
+	"name": "ds_blob_target1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_target",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BlobtoBlobStorage"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "abc1.txt",
+				"folderPath": "targetstorate",
+				"container": "blobstorage"
+			}
+		}
+	}
+}
